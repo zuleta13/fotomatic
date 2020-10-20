@@ -242,10 +242,22 @@ header .mobile {
   margin: 0 auto;
 }
 
+.image-container img {
+  width: 100%;
+}
+
+.feature .content {
+  margin: 0 auto;
+  width: 90%;
+  height: 8rem;
+}
+
 .feature h2 {
   padding-bottom: .5rem;
+  margin-top: 2.5rem;
   font-size: 2.25rem;
   font-weight: bold;
+  line-height: 1.2;
   color: #4a4a4a;
 }
 
