@@ -10,6 +10,12 @@ html {
   top: 5.3125rem; /* To offset for fixed header. */
 }
 
+@media only screen and (max-width: 760px) {
+  .main-content {
+    top: 2.5625rem;
+  }
+}
+
 .center {
   text-align: center;
 }
@@ -28,16 +34,11 @@ html {
   display: block;
 }
 
-@media only screen and (max-width: 760px) {
-  .main-content {
-    top: 2.5625rem;
-  }
-}
-
 /* Header */
 
 header {
   position: fixed;
+  z-index: 5;
   width: 100%;
   border-bottom: solid 1px #c6c1c1;
   background-color: white;
@@ -51,6 +52,9 @@ header .content {
 
 header .logo {
   flex: 1;
+  font-size: 1.5rem;
+  color: #4A4A4A;
+  letter-spacing: 3px;
 }
 
 header nav ul {
@@ -63,9 +67,11 @@ nav li {
 
 nav a {
   vertical-align: bottom;
-  line-height: 1.6;
+  line-height: 1.5625;
   font-size: 1rem;
-  color: #4a4a4a;
+  color: #4A4A4A;
+  display: flex;
+  align-items: center;
 }
 
 header .icon {
