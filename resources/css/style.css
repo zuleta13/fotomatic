@@ -51,14 +51,14 @@ header {
 }
 
 header .content {
-  width: 100%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 1.875rem;
 }
 
 header .logo {
-  flex: 1;
+  /* flex: 1; */
   font-size: 1.5rem;
   color: #4A4A4A;
   letter-spacing: 3px;
