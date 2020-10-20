@@ -12,7 +12,7 @@ html {
 
 @media only screen and (max-width: 760px) {
   .main-content {
-    top: 2.5625rem;
+    top: 4.5rem;
   }
 }
 
@@ -63,6 +63,8 @@ header nav ul {
 
 nav li {
   padding-left: 3.5rem;
+  display: flex;
+  align-items: center;
 }
 
 nav a {
@@ -75,15 +77,45 @@ nav a {
 }
 
 header .icon {
-  width: 1rem;
-  padding-left: .75rem;
+  width: 1.2rem;
+  padding-left: .35rem;
 }
 
-header .mobile {
+header .button {
+  padding: .1875rem .5rem;
+  background-color: #9dc20b;
+  line-height: 1.6;
+  color: white;
+}
+
+header .mobile,
+header .tablet {
   display: none;
 }
 
 @media only screen and (max-width: 760px) {
+  header .desktop {
+    display: none;
+  }
+
+  header .content {
+    padding: 1.25rem;
+  }
+
+  header .logo {
+    display: block;
+  }
+
+  header .tablet {
+    display: inline-block;
+  }
+
+  nav li {
+    padding-left: 2rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
   header .desktop {
     display: none;
   }
@@ -139,6 +171,13 @@ header .mobile {
   margin: 10.625rem 6.25rem;
 }
 
+@media only screen and (max-width: 760px) {
+  #sign-up-cta {
+    padding: 0;
+    margin: 0 auto;
+  }
+}
+
 #sign-up-cta .content {
   width: 25.625rem;
   margin-top: 2rem;
@@ -167,6 +206,12 @@ header .mobile {
 #sign-up-cta .striking {
   font-family: "Rubik", sans-serif;
   padding-bottom: .75rem;
+}
+
+@media only screen and (max-width: 760px) {
+  #sign-up-cta .striking {
+    padding: 0px;
+  }
 }
 
 #sign-up-cta .button {
